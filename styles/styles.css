@@ -27,6 +27,7 @@ main img {
     height: auto;
     padding: auto;
     box-shadow: #333;
+    border: #000;
 }
 
 p {
@@ -40,6 +41,8 @@ footer {
 }
 
 nav {
+    color: #eee;
     background-color: #eee;
     padding: 10px;
+    display: block;
 }
