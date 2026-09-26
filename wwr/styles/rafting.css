@@ -48,6 +48,10 @@ article {
     text-decoration: none;
 }
 
+.hero {
+    position: relative;
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -65,7 +69,8 @@ h1 {
     color: #fff;
 }
 
-.hero article img {
+.hero article img h1 {
+    position: absolute;
     float: right;
     width: 125px;
 }
