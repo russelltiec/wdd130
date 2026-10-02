@@ -106,3 +106,22 @@ footer .socialmedia img {
 footer .socialmedia img:hover {
     transform: scale(1.1);
 }
+
+main section {
+    background-color: var(--accent2-color);
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+main section h2 {
+    background-color: var(--primary-color);
+    /* Deep navy banner background */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    padding: 12px;
+    margin: -20px -20px 20px -20px;
+
+    font-family: var(--heading-font);
+}
