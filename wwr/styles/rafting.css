@@ -20,7 +20,8 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
 }
 
 header,
@@ -44,6 +45,11 @@ article {
     padding: 8px;
 }
 
+nav a {
+    color: var(--secondary-color);
+
+}
+
 .socialmedia a {
     text-decoration: none;
 }
@@ -58,7 +64,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -69,10 +75,18 @@ h1 {
     color: #fff;
 }
 
-.hero article img h1 {
+.hero article {
     position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero article img {
     float: right;
     width: 125px;
+    margin-left: 10px;
 }
 
 footer .socialmedia {
