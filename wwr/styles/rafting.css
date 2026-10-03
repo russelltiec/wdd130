@@ -7,6 +7,8 @@
     /* warm amber */
     --accent2-color: #f8f9fa;
     /* soft off-white background */
+    --white-color: #ffffff;
+    --border-color: #767676;
     --heading-font: "Montserrat", "Helvetica Neue", sans-serif;
     --body-font: "Open Sans", Arial, sans-serif;
 }
@@ -36,7 +38,7 @@ header {
     grid-template-columns: 120px 1fr;
     align-items: center;
     padding: 15px 0;
-    background-color: #fff;
+    background-color: var(--white-color);
     border-bottom: 1px solid #ddd;
 }
 
@@ -162,7 +164,7 @@ main section {
     background-color: var(--accent2-color);
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #767676;
+    border: 1px solid var(--border-color);
 }
 
 main section h2 {
