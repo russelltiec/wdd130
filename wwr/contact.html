@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Splash Whitewater Rafting></title>
+    <meta name="description"
+      content="Get in touch with Splash Whitewater Rafting. Find our address, phone number, email, location map, meet our team, and send us your inquiries or feedback.">
+    <meta name="author" content="Russell Chibwe">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-splash.png" alt="wwr logo">
+        <nav>
+            <!-- <ul> -->
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+            <!-- </ul> -->
+        </nav>
+    </header>
+    <main>
+        <!-- Company Information Section (Centered at Top) -->
+        <section class="company-section">
+            <h1>White Water Rafting Company</h1>
+            <div class="company-details">
+                <p>123 Main River Street<br>
+                    Kolob, California</p>
+                <p>+1 999 999 9999</p>
+                <p>info@whitewater.com</p>
+            </div>
+        </section>
+
+        <!-- Side-by-Side Map and Form Grid -->
+        <div class="contact-grid">
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12412.463435819038!2d31.43155590174824!3d-19.96921563721999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1791581950506!5m2!1sen!2szw"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="field-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Placeholder" required>
+                    </div>
+
+                    <div class="field-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Placeholder"
+                          required>
+                    </div>
+
+                    <fieldset class="field-row radio-row">
+                        <legend>Message Purpose</legend>
+                        <div class="radio-group">
+                            <div class="radio-option">
+                                <input type="radio" id="general" name="purpose" value="general"
+                                  checked>
+                                <label for="general">General Inquiry</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation">
+                                <label for="reservation">Reservation Question</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="suggestion" name="purpose"
+                                  value="suggestion">
+                                <label for="suggestion">Website Suggestion</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="field-column">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Type here"></textarea>
+                    </div>
+
+                    <div class="field-row checkbox-row">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Please Subscribe me to the monthly
+                            newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Employee Profiles Section -->
+        <section class="employees-section">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/worker1.jpg" alt="Lead Guide Profile">
+                    <figcaption>Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/worker2.jpg" alt="Operations Manager Profile">
+                    <figcaption>Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/worker3.jpg" alt="Customer Relations Profile">
+                    <figcaption>Customer Relations</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Splash Whitewater Rafting | Russell Chibwe</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="facebook icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="instagram icon">
+            </a>
+            <a href="https://tiktok.com">
+                <img src="images/tictok-bw.svg" alt="ticktok icon">
+            </a>
+
+        </nav>
+    </footer>
+
+</body>
+
+</html>
