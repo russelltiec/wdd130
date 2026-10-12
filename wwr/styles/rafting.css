@@ -17,7 +17,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -79,7 +78,6 @@ header nav a {
 
 header nav a:hover {
     color: var(--secondary-color);
-
 }
 
 nav a {
@@ -90,6 +88,22 @@ nav a {
     text-decoration: none;
 }
 
+/* Global Section Banner Headings */
+main section h2,
+.company-section h1,
+.employees-section h2,
+.trip-table-section h2,
+.trip-descriptions h2 {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 12px;
+    margin: -20px -20px 20px -20px;
+    font-family: var(--heading-font);
+    border-radius: 4px 4px 0 0;
+}
+
+/* Hero Component Styles */
 .hero {
     position: relative;
     margin-top: 10px;
@@ -107,7 +121,7 @@ nav a {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.85;
     background-color: var(--accent1-color);
     color: #000000;
 }
@@ -127,6 +141,57 @@ nav a {
     margin-left: 10px;
 }
 
+/* Home Hero Customization */
+.hero.home-hero h1 {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    background-color: rgba(255, 183, 3, 0.9);
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(27, 38, 59, 0.85);
+    padding: 15px 25px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.hero-cta p {
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.cta-button,
+.cta-button-large {
+    display: inline-block;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover,
+.cta-button-large:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+/* Footer Component Styles */
 footer {
     display: flex;
     justify-content: space-between;
@@ -167,17 +232,7 @@ main section {
     border: none;
 }
 
-main section h2 {
-    background-color: var(--primary-color);
-    /* Deep navy banner background */
-    color: #fff;
-    /* White text color */
-    text-align: center;
-    padding: 12px;
-    margin: -20px -20px 20px -20px;
-    font-family: var(--heading-font);
-}
-
+/* About Us Page Grids */
 .history-content {
     display: grid;
     grid-template-columns: 1fr 160px 1fr;
@@ -225,11 +280,73 @@ main section h2 {
     color: var(--primary-color);
 }
 
-/* =================================================================
-   Contact Us Page Specific Styles
-   ================================================================= */
+/* Home Page Grid Offerings */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
 
-/* Company Information Header */
+.home-grid figure {
+    text-align: center;
+    margin: 0;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.home-grid figcaption {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* Purpose & Newsletter Section Grid */
+.purpose-newsletter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: var(--white-color);
+    padding: 25px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.purpose-content h2,
+.newsletter-container h2 {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: -25px -25px 15px -25px;
+    border-radius: 4px 4px 0 0;
+    font-size: 1.1rem;
+}
+
+.newsletter-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsletter-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Contact Us Page Specific Styles */
 .company-section {
     background-color: var(--white-color);
     padding: 25px;
@@ -243,6 +360,7 @@ main section h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: var(--primary-color);
+    margin-top: 0;
 }
 
 .company-details p {
@@ -250,7 +368,6 @@ main section h2 {
     padding: 0;
 }
 
-/* Two-Column Grid for Map and Form */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -278,7 +395,6 @@ main section h2 {
     border-radius: 4px;
 }
 
-/* Form Styles */
 .form-container form {
     display: flex;
     flex-direction: column;
@@ -286,7 +402,6 @@ main section h2 {
     background-color: transparent;
 }
 
-/* Two-column rows (Label left, Input right) */
 .field-row {
     display: grid;
     grid-template-columns: 130px 1fr;
@@ -315,7 +430,6 @@ main section h2 {
     background-color: var(--accent2-color);
 }
 
-/* Radio Button Group */
 fieldset.field-row.radio-row {
     align-items: start;
 }
@@ -342,7 +456,6 @@ fieldset.field-row.radio-row {
     font-size: 0.9rem;
 }
 
-/* Vertical column for Message Textarea */
 .field-column {
     display: flex;
     flex-direction: column;
@@ -369,7 +482,6 @@ fieldset.field-row.radio-row {
     resize: vertical;
 }
 
-/* Newsletter Checkbox Row */
 .checkbox-row {
     display: flex;
     align-items: center;
@@ -389,7 +501,6 @@ fieldset.field-row.radio-row {
     font-size: 0.85rem;
 }
 
-/* Submit Button Matching Wireframe */
 .form-container button[type="submit"] {
     background-color: #e2e2e2;
     color: #111;
@@ -408,23 +519,12 @@ fieldset.field-row.radio-row {
     color: var(--white-color);
 }
 
-/* Employee Profiles Section */
 .employees-section {
     background-color: var(--white-color);
     padding: 25px;
     margin: 20px 0;
     border: 1px solid var(--border-color);
     border-radius: 4px;
-}
-
-.employees-section h2 {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    text-align: center;
-    padding: 12px;
-    margin: -25px -25px 20px -25px;
-    font-family: var(--heading-font);
-    border-radius: 4px 4px 0 0;
 }
 
 .employee-grid {
@@ -453,4 +553,89 @@ fieldset.field-row.radio-row {
     font-weight: 600;
     margin-top: 8px;
     color: var(--primary-color);
+}
+
+/* Trips Page Specific Styles */
+.trips-hero {
+    background-color: var(--white-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.trips-hero h1 {
+    margin-bottom: 10px;
+}
+
+.trips-hero p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.trip-descriptions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 4px;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.trip-card:nth-child(even) {
+    grid-template-columns: 1fr 300px;
+}
+
+.trip-card:nth-child(even) img {
+    order: 2;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.trip-info h3 {
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+/* Trip Table Styling with Zebra Striping */
+.trip-table-section {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.trip-table tbody tr:nth-child(even) {
+    background-color: var(--accent2-color);
 }
